@@ -7,9 +7,17 @@
 
 
 `使用方式`   
-1.servercode里是服务器的代码
+1.servercode里是服务器的代码,采用命令
+```
+g++ -o run1 myserver.cpp -lws2_32 -l pthread
+```
+进行编译,然后运行
+```
+.\run1 
+```
 
-2.clientcode里有两个文件夹，makeexe文件夹里myqt1.exe可以点击直接运行，src文件夹里是对应的c++源代码。
+
+2.clientcode里有两个文件夹，makeexe文件夹里myqt1.exe可以点击直接运行，src文件夹里是对应的c++源代码，源代码需配合QT进行使用，本人采用的是Mingw+Cmake，大家可自行研究。
 
 3.可以通过运行makeexe里的myqt1.exe,并输入自己服务器的IP，以及端口号12345（注意端口号一定要是这个，设置服务器的时候也要开这个端口） 用户名随意，直接连接到服务器，进行测试。
 
